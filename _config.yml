@@ -3,10 +3,10 @@ title:          I am …
 description:    "… the voice of you, and those around you"
 url:            "https://iam.ramiyer.me"
 
-future: false
+future: true
 
 # Google Analytics
-google_analytics: UA-96215433-3
+google_analytics:
 
 # Author
 author:
@@ -32,10 +32,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   # - jemoji #Uncomment this to allow emoji in your post
-
-# Permalinks
-permalink:      /:year/:month-:day-:title/
-paginate:       5
 
 feedlimit:      10
 
