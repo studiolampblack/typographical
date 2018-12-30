@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ram Iyer"]
   spec.email         = ["ramakrishnan.rkology@gmail.com"]
 
-  spec.summary       = %{a typography-focused theme based on Tale by Chester How.}
+  spec.summary       = %{A typography-focused theme based on Tale by Chester How.}
   spec.homepage      = "https://iam.ramiyer.me"
   spec.license       = "MIT"
 
