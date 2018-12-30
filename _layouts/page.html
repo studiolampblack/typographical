@@ -2,4 +2,14 @@
 layout: default
 ---
 
-{{ content }}
+<div class="page">
+  <h1 class="post-title">{{ page.title | smartify }}</h1>
+  <div class="post-line"></div>
+
+  {{ content }}
+
+</div>
+
+<div class="pagination">
+  <a href="#" class="top">Top</a>
+</div>

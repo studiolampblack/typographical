@@ -1,0 +1,15 @@
+<nav class="nav">
+  <div class="nav-container">
+    <a href="{{ site.baseurl }}/">
+      <h1 class="nav-title">{{ site.title }}</h1>
+    </a>
+    <ul>
+      <li><a href="{{ '/about/' | prepend: site.baseurl }}"><i class="fas fa-info"></i></a></li>
+      <li><a href="{{ '/archive/' | prepend: site.baseurl }}"><i class="fas fa-archive"></i></a></li>
+      {% if site.facebook %}<li><a href="https://facebook.com/{{ site.facebook }}/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>{% endif %}
+      {% if site.twitter %}<li><a href="https://twitter.com/{{ site.twitter }}/" target="_blank"><i class="fab fa-twitter"></i></a></li>{% endif %}
+      {% if site.podcasturl %}<li><a href="{{ site.podcasturl }}" target="_blank"><i class="fas fa-headphones-alt"></i></a></li>{% endif %}
+      <li><a href="{{ site.baseurl }}/feed.xml"><i class="fas fa-rss"></i></a></li>
+    </ul>
+  </div>
+</nav>

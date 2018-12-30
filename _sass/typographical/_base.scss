@@ -1,0 +1,73 @@
+* {
+  @include box-sizing;
+  line-height: 1.6;
+}
+
+html,
+body {
+  color: $default-color;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $serif-primary;
+  font-size: 1rem;
+  overflow-y: scroll;
+
+  @media (min-width: 600px) {
+    font-size: $base-font-size;
+  }
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+body p {
+  font-size: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $default-shade;
+  font-family: $sans-serif;
+  line-height: normal;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 0 2.5em;
+
+  @media (max-width: 600px) {
+    margin: 0 0 0 2em;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 0 1rem;
+  max-width: 100%;
+}
+
+td {
+  vertical-align: top;
+}
+
+hr {
+  border-top: solid 0.5px $grey-2;
+  margin-bottom: 1em;
+}

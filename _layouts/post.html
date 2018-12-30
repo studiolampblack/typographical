@@ -2,4 +2,59 @@
 layout: default
 ---
 
-{{ content }}
+<div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    {% if page.author %}
+      {% if page.author.google_plus %}
+        <a href="https://plus.google.com/+{{ page.author.google_plus | replace: '+', '' }}?rel=author">{{ page.author.name }}</a>
+      {% else %}
+        {{ page.author.name }}
+      {% endif %}
+    {% else %}
+      {% if site.author.google_plus %}
+        <a rel="author" href="https://plus.google.com/+{{ site.author.google_plus | replace: '+', '' }}">{{ site.author.name }}</a>
+      {% else %}
+        {{ site.author.name }}
+      {% endif %}
+    {% endif %}
+
+    {% if page.date %}
+      <br>
+      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.published == false %} (unpublished){% endif %}
+    {% endif %}
+  </div>
+
+  <h1 class="post-title">{{ page.title | smartify }}</h1>
+  <div class="post-line"></div>
+
+  {% assign drop_cap = content | strip_html | truncate: 1, '' %}
+  {% if drop_cap == '‘' or drop_cap == '“' %}
+    {% assign drop_cap = content | strip_html | truncate: 2, '' %}
+  {% endif %}
+  {% capture drop_cap_html %}<span class="drop-cap">{{ drop_cap }}</span>{% endcapture %}
+  {{ content | replace_first:drop_cap,drop_cap_html | replace_first:'</p>','</p><!--more-->' }}
+
+</div>
+
+<div class="share-bar" style="margin-bottom: 1em;">
+  {% include share.html %}
+</div>
+
+{% include support.html %}
+{% include related.html %}
+
+<div class="hidden">
+  {{ page.tags | join: ', '}}
+</div>
+
+<div class="pagination">
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <a href="#" class="top">Top</a>
+</div>
