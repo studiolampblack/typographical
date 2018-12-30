@@ -1,0 +1,36 @@
+---
+layout: page
+title: Archive
+permalink: /archive/
+---
+
+<section class="post-list">
+  {% for post in site.posts %}
+    {% assign currentMonth = post.date | date: "%B %Y" %}
+    {% assign currentYear = post.date | date: "%Y" %}
+    {% if currentYear != myYear %}
+      <h4>{{ currentYear }}</h4><span>| </span>
+      {% assign myYear = currentYear %}
+    {% endif %}
+    {% if currentMonth != myMonth %}
+      <span><a href="#{{ currentMonth | date: '%B %Y' | slugify }}">{{ currentMonth | date: "%B" }}</a>&nbsp;| </span>
+      {% assign myMonth = currentMonth %}
+    {% endif %}
+  {% endfor %}
+
+  <hr />
+
+  {% for post in site.posts %}
+    {% assign currentMonth = post.date | date: "%B %Y" %}
+    {% assign currentYear = post.date | date: "%Y" %}
+    {% if currentYear != myYear %}
+      <h3 id="{{ currentYear | slugify }}">{{ currentYear }}</h3>
+      {% assign myYear = currentYear %}
+    {% endif %}
+    {% if currentMonth != myMonth %}
+      <h4 id="{{ currentMonth | slugify }}" style="margin-left: 0.67em;">{{ currentMonth | date: "%B" }}</h4>
+      {% assign myMonth = currentMonth %}
+    {% endif %}
+    <p style="margin-left: 2em;"><a href="{{ post.url }}">{{ post.title | markdownify | strip_html }}</a> | {{ post.date | date: "%b %d, %Y" }}</p>
+  {% endfor %}
+</section>

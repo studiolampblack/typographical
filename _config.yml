@@ -1,0 +1,52 @@
+# Site settings
+title:          I am …
+description:    "… the voice of you, and those around you"
+url:            "https://iam.ramiyer.me"
+
+future: false
+
+# Google Analytics
+google_analytics: UA-96215433-3
+
+# Author
+author:
+  name:         Ram Iyer
+  url:          https://ramiyer.me
+  email:
+  google_plus:  +RamIyer07
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year/:month-:day-:title/
+paginate:       5
+
+feedlimit:      10
+
+# Tuning
+relatedpostsenabled: true # whether you want related posts enabled
+tagrelationlevel: 2 # higher number corresponds to narrower targetting
+maxrelatedposts: 3
+
+wpm: 180 # read speed in words per minute
+
+# Social
+facebook:
+twitter: theramiyer
+podcasturl: "https://anchor.fm/theramiyer/"
