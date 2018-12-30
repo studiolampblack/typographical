@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "typographical-jekyll-theme"
+  spec.name          = "typographical"
   spec.version       = "0.1.0"
   spec.authors       = ["Ram Iyer"]
   spec.email         = ["ramakrishnan.rkology@gmail.com"]
