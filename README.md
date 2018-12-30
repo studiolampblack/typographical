@@ -1,41 +1,90 @@
 # Typographical
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Thank you for choosing Typographical as your Jekyll theme! Typographical is a minimalist Jekyll theme focused on typography. This theme is for you if you are a writer or a storyteller.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+This theme is based on the [Tale theme by Chester How](https://github.com/chesterhow/tale).
 
-TODO: Delete this and the text above, and describe your gem
-
+Refer to the [project Wiki](https://github.com/theramiyer/typographical/wiki) for more information and instructions.
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
+Installation is straightforward. There are three modes in which you can use the theme.
+
+1. As a Ruby Gem. (Recommended)
+2. As a GitHub remote theme.
+3. A fork of this repository.
+
+### Install as Ruby Gem
+
+Very simple, very straightforward. Also, this will ensure updates to your site design as and when they are released.
+
+1. Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
 gem "typographical"
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+2. Install the gems and dependencies:
+
+```bash
+$ bundle
+```
+
+3. And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
 theme: typographical
+
+permalink: /:year-:month-:day/:title
+paginate: 5
 ```
 
-And then execute:
+Remove any other `theme:` lines in your `_config.yml`
 
-    $ bundle
+4. Create two pages, [`about.md`](https://github.com/theramiyer/typographical/blob/master/_pages/about.md) and [`archive.html`](https://github.com/theramiyer/typographical/blob/master/_pages/archive.html) under `_pages`. Copy the code from this repository. Not doing this will result in broken links in the navigation.
 
-Or install it yourself as:
+### GitHub Pages method
 
-    $ gem install typographical
+Use this method if you are using GitHub Pages to host your site.
 
-## Usage
+1. Add the following lines to your `Gemfile`:
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+```gemfile
+gem "jekyll-remote-theme"
+gem "jekyll-paginate"
+```
+
+2. Install the gems:
+
+```bash
+$ bundle
+```
+
+3. In your `_config.yml`, add the following:
+
+```bash
+remote_theme: theramiyer/typographical
+
+permalink: /:year-:month-:day/:title
+paginate: 5
+
+plugins:
+  - jekyll-paginate
+  - jekyll-remote-theme
+```
+
+4. Remove any other `theme:` or `remote_theme:` lines.
+5. Create two pages, [`about.md`](https://github.com/theramiyer/typographical/blob/master/_pages/about.md) and [`archive.html`](https://github.com/theramiyer/typographical/blob/master/_pages/archive.html) under `_pages`. Copy the code from this repository. Not doing this will result in broken links in the navigation.
+
+### Fork method
+
+1. Fork this repository
+2. Delete the `typographical.gemspec` file.
+3. Configure the Gemfile appropriately. (Basically, include the gems specified in the `gemspec` file, in the right format.)
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/theramiyer/typographical. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
