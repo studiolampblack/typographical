@@ -1,6 +1,6 @@
 # Site settings
-title:          I am …
-description:    "… the voice of you, and those around you"
+title:          Typographical
+description:    "A typography-focused theme"
 url:            "https://iam.ramiyer.me"
 
 future: true
@@ -33,6 +33,7 @@ plugins:
   - jekyll-sitemap
   # - jemoji #Uncomment this to allow emoji in your post
 
+# Limit the number of posts generated in the feed
 feedlimit:      10
 
 # Tuning
@@ -44,5 +45,5 @@ wpm: 180 # read speed in words per minute
 
 # Social
 facebook:
-twitter: theramiyer
-podcasturl: "https://anchor.fm/theramiyer/"
+twitter:
+podcasturl:
