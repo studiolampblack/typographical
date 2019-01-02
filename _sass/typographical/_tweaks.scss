@@ -57,6 +57,16 @@ input:focus, textarea:focus {
   text-transform: lowercase;
 }
 
+.post > .post-subtitle {
+  font-size: $base-font-size;
+  font-family: $serif-primary;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
 .relatedposts ul li {
   font-size: $base-font-size;
   list-style-type: square;

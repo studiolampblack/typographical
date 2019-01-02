@@ -28,6 +28,10 @@ layout: default
   <h1 class="post-title">{{ page.title | smartify }}</h1>
   <div class="post-line"></div>
 
+  {% if page.subtitle %}
+    <h2 class="post-subtitle">{{ page.subtitle | smartify }}</h2>
+  {% endif %}
+
   {% assign drop_cap = content | strip_html | truncate: 1, '' %}
   {% if drop_cap == '‘' or drop_cap == '“' %}
     {% assign drop_cap = content | strip_html | truncate: 2, '' %}
