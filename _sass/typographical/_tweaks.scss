@@ -149,13 +149,12 @@ footer, .share-bar, .nav-container { /* Disable selection of some elements */
   font-size: $base-font-size;
 }
 
-p strong, li strong { // for abbreviations that need small caps
-  font-family: $sc-font;
-  font-weight: normal;
-  text-transform: lowercase;
-  letter-spacing: 0.01em;
-}
-
 .hidden {
   display: none;
+}
+
+.small-caps {
+  font-family: $sc-font;
+  letter-spacing: 0.01em;
+  text-transform: lowercase;
 }
