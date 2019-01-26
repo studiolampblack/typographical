@@ -158,3 +158,16 @@ footer, .share-bar, .nav-container { /* Disable selection of some elements */
   letter-spacing: 0.01em;
   text-transform: lowercase;
 }
+
+// for those little screens
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 1.1 * $base-font-size;
+  }
+
+  .post-title {
+    font-size: 2.5em;
+  }
+}
+
