@@ -15,7 +15,7 @@ html {
   font-size: 1rem;
   overflow-y: scroll;
 
-  @media (min-width: 600px) {
+  @media (min-width: 37.5em) {
     font-size: $base-font-size;
   }
 }
@@ -52,7 +52,7 @@ a {
 blockquote {
   margin: 0 2.5em;
 
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) {
     margin: 0 0 0 2em;
   }
 }
@@ -68,6 +68,6 @@ td {
 }
 
 hr {
-  border-top: solid 0.5px $grey-2;
+  border-top: solid 0.02em $grey-2;
   margin-bottom: 1em;
 }

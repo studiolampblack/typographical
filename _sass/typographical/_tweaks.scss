@@ -91,10 +91,10 @@ input:focus, textarea:focus {
 }
 
 footer {
-  max-width: 640px;
+  max-width: 40em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .nav-title {
     font-size: 2em;
     margin-top: 1em;
@@ -130,7 +130,7 @@ footer, .share-bar, .nav-container { /* Disable selection of some elements */
             user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   * {
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
