@@ -36,6 +36,8 @@ plugins:
 # Limit the number of posts generated in the feed
 feedlimit:      10
 
+paginate: 5
+
 # Tuning
 relatedpostsenabled: true # whether you want related posts enabled
 tagrelationlevel: 2 # higher number corresponds to narrower targetting
