@@ -48,7 +48,7 @@ input:focus, textarea:focus {
 }
 
 .post > p:first-of-type::first-line {
-  font-family: "Alegreya SC";
+  font-family: $sc-font;
   text-transform: lowercase;
   letter-spacing: 0.01em;
 }
@@ -154,7 +154,7 @@ footer, .share-bar, .nav-container { /* Disable selection of some elements */
 }
 
 .post blockquote p {
-  font-size: 1.1em;
+  font-size: 0.9 * $base-font-size;
 }
 
 .post li {
