@@ -67,9 +67,21 @@ input:focus, textarea:focus {
   margin-bottom: 3rem;
 }
 
-.relatedposts ul li {
+.relatedposts ul li, .post ul li {
   font-size: $base-font-size;
   list-style-type: square;
+}
+
+.post ul#markdown-toc {
+  color: $accent-color;
+  & li a {
+    color: $default-color;
+    background: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .relatedposts {
