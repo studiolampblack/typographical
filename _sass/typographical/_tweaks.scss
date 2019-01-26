@@ -101,7 +101,7 @@ footer {
   }
 
   .nav-container ul {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .nav-container ul a {
@@ -109,7 +109,7 @@ footer {
   }
 
   .share-bar .share-buttons {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   .share-bar .share-buttons .fab {
@@ -142,7 +142,7 @@ footer, .share-bar, .nav-container { /* Disable selection of some elements */
 }
 
 .post blockquote p {
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 
 .post li {
@@ -171,3 +171,12 @@ footer, .share-bar, .nav-container { /* Disable selection of some elements */
   }
 }
 
+// sub-heading adjustments
+
+.post h2 {
+  font-size: 1.7em;
+}
+
+.post h3 {
+  font-size: 1.4em;
+}

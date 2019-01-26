@@ -13,6 +13,10 @@
     &:last-child {
       border: 0;
     }
+
+    p {
+      font-size: $base-font-size;
+    }
   }
 
   &-time {

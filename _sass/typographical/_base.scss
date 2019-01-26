@@ -15,8 +15,10 @@ html {
   font-size: 1rem;
   overflow-y: scroll;
 
-  @media (min-width: 37.5em) {
-    font-size: $base-font-size;
+  font-size: $base-font-size;
+
+  @media (min-width: 90em) {
+    font-size: 1.15 * $base-font-size;
   }
 }
 
@@ -27,10 +29,6 @@ body {
      -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
-}
-
-body p {
-  font-size: 1.3em;
 }
 
 h1,
