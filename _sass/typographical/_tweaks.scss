@@ -74,7 +74,7 @@ input:focus, textarea:focus {
 
 .post ul#markdown-toc {
   color: $accent-color;
-  & li a {
+  li a {
     color: $default-color;
     background: none;
 
@@ -180,6 +180,14 @@ footer, .share-bar, .nav-container { /* Disable selection of some elements */
 
   .post-title {
     font-size: 2.5em;
+  }
+}
+
+// for HiDPI screens
+
+@media (min-width: 90em) {
+  html {
+    font-size: 1.2 * $base-font-size;
   }
 }
 
