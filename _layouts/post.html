@@ -6,14 +6,14 @@ layout: default
   <div class="post-info">
     <span>Written by</span>
     {% if page.author %}
-      {% if page.author.google_plus %}
-        <a href="https://plus.google.com/+{{ page.author.google_plus | replace: '+', '' }}?rel=author">{{ page.author.name }}</a>
+      {% if page.author.url %}
+        <a href="{{ page.author.url }}" rel=author target="_blank">{{ page.author.name }}</a>
       {% else %}
         {{ page.author.name }}
       {% endif %}
     {% else %}
-      {% if site.author.google_plus %}
-        <a rel="author" href="https://plus.google.com/+{{ site.author.google_plus | replace: '+', '' }}">{{ site.author.name }}</a>
+      {% if site.author.url %}
+        <a href="{{ site.author.url }}" rel="author" target="_blank">{{ site.author.name }}</a>
       {% else %}
         {{ site.author.name }}
       {% endif %}
