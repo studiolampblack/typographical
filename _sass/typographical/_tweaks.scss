@@ -233,3 +233,15 @@ footer, .share-bar, .nav-container { /* Disable selection of some elements */
   content: "on ";
   font-style: italic;
 }
+
+.contact-form {
+  margin-bottom: 2em;
+}
+
+.contact-form input[type="submit"] {
+  display: block;
+  background: $accent-color;
+  max-width: 8em;
+  margin: 0 auto;
+  border-radius: 0.15em;
+}
