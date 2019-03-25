@@ -244,4 +244,7 @@ footer, .share-bar, .nav-container { /* Disable selection of some elements */
   max-width: 8em;
   margin: 0 auto;
   border-radius: 0.15em;
+  /* Disable iOS and Mozilla button overrides*/
+  -webkit-appearance: none;
+     -moz-appearance: none;
 }
