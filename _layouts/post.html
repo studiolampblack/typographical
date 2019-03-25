@@ -8,13 +8,13 @@ layout: default
       {% if page.author.url %}
         <a href="{{ page.author.url }}" rel=author target="_blank">{{ page.author.name }}</a>
       {% else %}
-        {{ page.author.name }}
+        <a>{{ page.author.name }}</a>
       {% endif %}
     {% else %}
       {% if site.author.url %}
         <a href="{{ site.author.url }}" rel="author" target="_blank">{{ site.author.name }}</a>
       {% else %}
-        {{ site.author.name }}
+        <a>{{ site.author.name }}</a>
       {% endif %}
     {% endif %}
 
