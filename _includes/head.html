@@ -8,6 +8,25 @@
   <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Alegreya+Sans:800|Alegreya:400,400i&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
+  <!-- Hyphenopoly -->
+  <script>
+    var Hyphenopoly = {
+      require: {
+        "en": "Supercalifragilisticexpialidocious"
+      },
+      paths: {
+        maindir: "/assets/hyphenopoly/",
+        patterndir: "/assets/hyphenopoly/patterns/",
+      },
+      setup: {
+        selectors: {
+          "body": {}
+        }
+      }
+    };
+  </script>
+  <script src="/assets/hyphenopoly/Hyphenopoly_Loader.js"></script>
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon-32x32.png" | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon-16x16.png" | relative_url }}">
