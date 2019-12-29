@@ -1,12 +1,14 @@
-p a, footer a, .post-list a, .relatedposts a, .support a, .footnote {
-  color: $default-color;
-  outline: none;
-  text-decoration: none !important;
-  transition: all .2s ease-out;
-  background: linear-gradient($accent-color, $accent-color);
-  background-size: 100% .2em;
-  background-repeat: no-repeat;
-  background-position: left 0 bottom 0;
+p, footer, .post-list, .relatedposts, .support, .footnote, .post li {
+  a {
+    color: $default-color;
+    outline: none;
+    text-decoration: none !important;
+    transition: all .2s ease-out;
+    background: linear-gradient($accent-color, $accent-color);
+    background-size: 100% .2em;
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0;
+  }
 }
 
 #results-container a {
@@ -75,12 +77,7 @@ input:focus, textarea:focus {
 .post ul#markdown-toc {
   color: $accent-color;
   li a {
-    color: $default-color;
     background: none;
-
-    &:hover {
-      text-decoration: none;
-    }
   }
 }
 
