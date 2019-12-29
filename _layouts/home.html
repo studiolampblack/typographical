@@ -6,7 +6,7 @@ layout: default
   {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
-        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>{% if site.wpm %}<span class="catalogue-time"> | {{ post.content | number_of_words | divided_by: site.wpm }} min read</span>{% endif %}
+        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date_to_long_string }}</time>{% if site.wpm %}<span class="catalogue-time"> | {{ post.content | number_of_words | divided_by: site.wpm }} min read</span>{% endif %}
         <h1 class="catalogue-title">{{ post.title | smartify }}</h1>
         <div class="catalogue-line"></div>
 

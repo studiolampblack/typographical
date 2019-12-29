@@ -20,7 +20,7 @@ layout: default
 
     {% if page.date %}
       <br>
-      <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.published == false %} (unpublished){% endif %}
+      <time datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>{% if page.published == false %} (unpublished){% endif %}
     {% endif %}
   </div>
 
