@@ -21,6 +21,16 @@ layout: default
     {% if page.date %}
       <br>
       <time datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>{% if page.published == false %} (unpublished){% endif %}
+      <div class="hidden">
+        <!-- The date and time when your article was originally published -->
+        <time class="op-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string: "ordinal" }}</time>
+      </div>
+    {% endif %}
+    {% if page.modified %}
+      <div class="hidden">
+        <!-- The date and time when your article was last updated -->
+        <time class="op-modified" dateTime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date_to_string: "ordinal" }}</time>
+      </div>
     {% endif %}
   </div>
 
