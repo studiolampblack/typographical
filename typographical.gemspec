@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "typographical"
-  spec.version       = "1.1.13"
+  spec.version       = "1.1.14"
   spec.authors       = ["Ram Iyer"]
   spec.email         = ["ramakrishnan.rkology@gmail.com"]
 
@@ -18,6 +18,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.5', '>= 2.5.0'
   spec.add_runtime_dependency 'jekyll-sitemap', '~> 1.2', '>= 1.2.0'
 
-  spec.add_development_dependency "bundler", "~> 2.1"
+  spec.add_development_dependency "bundler", ">= 1.16"
   spec.add_development_dependency "rake", "~> 12.0"
 end
