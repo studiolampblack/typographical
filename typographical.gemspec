@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "typographical"
-  spec.version       = "1.1.16"
+  spec.version       = "1.1.17"
   spec.authors       = ["Ram Iyer"]
   spec.email         = ["ramakrishnan.rkology@gmail.com"]
 
