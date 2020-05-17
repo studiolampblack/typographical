@@ -1,0 +1,13 @@
+{% if page.instagram %}
+  <div class="insta-div">
+    <img src="https://www.instagram.com/p/{{ page.instagram }}/media?size=l" alt="Cover: {{ page.title }}" />
+    <form action="https://instagram.com/{{ site.instagram }}" target="_blank">
+      <button class="insta-follow" type="submit">
+        <i class="icon-instagram"></i> Follow
+      </button>
+    </form>
+  </div>
+{% elsif page.image %}
+  <img src="{{ page.image | prepend: site.baseurl | prepend: site.url }}" alt="Cover: {{ page.title }}" />
+{% else %}
+{% endif %}
