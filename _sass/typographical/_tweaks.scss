@@ -268,3 +268,13 @@ table {
   height: 100%;
   border-radius: 0.4rem;
 }
+
+th, td {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+th {
+  font-family: $sans-serif;
+  font-size: 1.1em;
+}
