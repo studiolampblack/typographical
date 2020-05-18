@@ -1,5 +1,7 @@
 # Typographical
 
+[![Gem Version](https://badge.fury.io/rb/typographical.svg)](https://badge.fury.io/rb/typographical)
+
 Thank you for choosing Typographical as your Jekyll theme! Typographical is a minimalist Jekyll theme focused on typography. This theme is for you if you are a writer or a storyteller.
 
 This theme is based on the [Tale theme by Chester How](https://github.com/chesterhow/tale).
